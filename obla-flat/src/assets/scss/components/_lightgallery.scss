@@ -1,0 +1,45 @@
+@import 'lightgallery/scss/lightgallery.scss';
+@import 'lightgallery/scss/lg-thumbnail.scss';
+
+@font-face {
+    font-family: 'lg';
+    src: url('lightgallery/fonts/lg.svg#lg') format('svg'),
+        url('lightgallery/fonts/lg.ttf') format('truetype'),
+        url('lightgallery/fonts/lg.woff') format('woff'),
+        url('lightgallery/fonts/lg.woff2') format('woff');
+}
+
+:root {
+    --gallery-columns-number: 3;
+    --gallery-gap: 10px;
+}
+
+.gallery {
+    gap: calc(var(--gallery-gap) / 3);
+
+    @media (min-width: 576px) {
+        gap: var(--gallery-gap);
+    }
+
+    .gallery-item {
+        width: 100%;
+
+        @media (min-width: 250px) {
+            width: calc((100% / 2) - (((2 - 1) / 2) * var(--gallery-gap)));
+        }
+
+        @media (min-width: 768px) {
+            width: calc((100% / 3) - (((3 - 1) / 3) * var(--gallery-gap)));
+        }
+
+        @media (min-width: 992px) {
+            width: calc((100% / var(--gallery-columns-number)) - (((var(--gallery-columns-number) - 1) / var(--gallery-columns-number)) * var(--gallery-gap)));
+        }
+
+        .img {
+            aspect-ratio: 1.5;
+            object-fit: cover;
+            overflow-clip-margin: unset;
+        }
+    }
+}

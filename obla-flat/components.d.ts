@@ -13,5 +13,6 @@ declare module 'vue' {
     BNavbarNav: typeof import('bootstrap-vue-next')['BNavbarNav']
     BNavbarToggle: typeof import('bootstrap-vue-next')['BNavbarToggle']
     BNavItem: typeof import('bootstrap-vue-next')['BNavItem']
+    PhotoGallery: typeof import('./src/components/PhotoGallery.vue')['default']
   }
 }

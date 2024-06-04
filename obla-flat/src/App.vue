@@ -13,6 +13,8 @@
     
     <div class="container">
         <h1>Oblá 36</h1>
+
+        <PhotoGallery />
     </div>
 
     <footer class="footer text-center text-lg-start text-white mt-5">
@@ -40,3 +42,8 @@
         </div>
     </footer>
 </template>
+
+<script setup lang="ts">
+import PhotoGallery from './components/PhotoGallery.vue'
+</script>
+
