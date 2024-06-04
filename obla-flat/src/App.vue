@@ -1,8 +1,8 @@
 <template>
     <header>
-        <BNavbar toggleable="lg" variant="dark" container="false">
+        <BNavbar toggleable="lg" type="dark" variant="dark" container>
             <BNavbarBrand href="/">Oblá 36</BNavbarBrand>
-            <BNavbarToggle target="nav-collapse" />
+            <BNavbarToggle target="nav-collapse" class="bg-white" />
             <BCollapse id="nav-collapse" is-nav>
                 <BNavbarNav class="ms-auto mb-2 mb-lg-0">
                     <BNavItem href="/" class="text-white-50">Info</BNavItem>
