@@ -12,9 +12,10 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
   },
   "dependencies": {
+    "@types/swiper": "^6.0.0",
     "bootstrap": "^5.3.3",
     "bootstrap-vue-next": "^0.20.0",
-    "lightgallery": "^2.7.2",
+    "swiper": "^11.1.4",
     "vue": "^3.4.21"
   },
   "devDependencies": {
