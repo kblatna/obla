@@ -12,8 +12,7 @@
     </header>
     
     <div class="container">
-        <h1>Oblá 36</h1>
-
+        <!-- <h1 class="text-center my-5">2+kk, 48 m², Oblá, Brno - Nový Lískovec</h1> -->
         <PhotoGallery />
     </div>
 
