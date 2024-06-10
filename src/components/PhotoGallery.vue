@@ -6,7 +6,7 @@
                 @swiper="setThumbsSwiper"
             >
                 <swiper-slide v-for="(photo, index) in photos" :key="index">
-                    <img :alt="photo.alt" :src="`/images/${photo.src}.jpg`" class="rounded-2 w-100 h-100" />
+                    <img :alt="photo.alt" :src="`/images/DSC_${photo.src}.jpg`" class="rounded-2 w-100 h-100" />
                 </swiper-slide>
             </swiper>
         </div>
@@ -25,7 +25,7 @@
             :thumbs="{ swiper: thumbsSwiper }"
         >
             <swiper-slide v-for="(photo, index) in photos" :key="index">
-                <img :alt="photo.alt" :src="`/images/${photo.src}.jpg`" class="rounded-2 w-100 h-100" />
+                <img :alt="photo.alt" :src="`/images/DSC_${photo.src}.jpg`" class="rounded-2 w-100 h-100" />
             </swiper-slide>
         </swiper>  
     </div>
@@ -53,11 +53,18 @@ const modules = [Navigation, Pagination, Scrollbar, Thumbs]
 
 // Define the photos array
 const photos = ref([
-    { src: 'obyvak', alt: 'Obývací pokoj' },
-    { src: 'kuchyne', alt: 'Kuchyně' },
-    { src: 'loznice', alt: 'Ložnice' },
-    { src: 'koupelna', alt: 'Koupelna' },
-    { src: 'chodba', alt: 'Chodba' }
+    { src: '0018', alt: 'Obývací pokoj' },
+    { src: '0019', alt: 'Kuchyně' },
+    { src: '0020', alt: 'Ložnice' },
+    { src: '0032', alt: 'Koupelna' },
+    { src: '0033', alt: 'Chodba' },
+    { src: '0036', alt: 'blabla' },
+    { src: '0042', alt: 'Obývací pokoj' },
+    { src: '0047', alt: 'Kuchyně' },
+    { src: '0054', alt: 'Ložnice' },
+    { src: '0059', alt: 'Koupelna' },
+    { src: '0067', alt: 'Chodba' },
+    { src: '0079', alt: 'blabla' }
   ])
 
 </script>
@@ -88,6 +95,10 @@ const photos = ref([
   width: 100%;  
   margin-left: auto;
   margin-right: auto;
+}
+
+.swiper-wrapper {
+  height: 150px;
 }
 
 .swiper-slide {

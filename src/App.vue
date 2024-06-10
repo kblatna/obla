@@ -12,15 +12,15 @@
     </header>
     
     <div class="container">
-        <!-- <h1 class="text-center my-5">2+kk, 48 m², Oblá, Brno - Nový Lískovec</h1> -->
+        <h1 class="text-center my-5">2+kk, 48 m², Oblá, Brno - Nový Lískovec</h1>
         <PhotoGallery />
     </div>
 
     <footer class="footer text-center text-lg-start text-white mt-5">
         <section class="container pt-4">
             <div class="text-center text-sm-start mb-3">
-                <div class="row">
-                    <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="d-flex justify-content-center">
+                    <div>
                         <h6 class="footer-col-title text-uppercase fw-bold">Kontakt na majitele:</h6>                    
                         <div class="mt-5">
                             Tomáš Cibulka
