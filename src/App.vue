@@ -20,7 +20,8 @@
 
         <section class="section">
             <h3 class="text-center mb-4">Lokalita</h3>
-            <CityMap />
+            <!-- <CityMap /> -->                
+            <iframe class="rounded-2" style="border:none" src="https://frame.mapy.cz/s/pobedefefa" width="100%" height="466" frameborder="0"></iframe>
         </section>
     </div>
     <footer class="footer text-center text-lg-start text-white mt-5">
