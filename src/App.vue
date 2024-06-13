@@ -12,10 +12,17 @@
     </header>
     
     <div class="container">
-        <h1 class="text-center my-5">2+kk, 48 m², Oblá, Brno - Nový Lískovec</h1>
-        <PhotoGallery />
-    </div>
+        <!-- <h1 class="text-center my-5">2+kk, 48 m², Oblá, Brno - Nový Lískovec</h1> -->
+        <section class="section">
+            <h3 class="text-center mb-4">Fotogalerie</h3>
+            <PhotoGallery />
+        </section>
 
+        <section class="section">
+            <h3 class="text-center mb-4">Lokalita</h3>
+            <CityMap />
+        </section>
+    </div>
     <footer class="footer text-center text-lg-start text-white mt-5">
         <section class="container pt-4">
             <div class="text-center text-sm-start mb-3">
@@ -23,9 +30,9 @@
                     <div>
                         <h6 class="footer-col-title text-uppercase fw-bold">Kontakt na majitele:</h6>                    
                         <div class="mt-5">
-                            Tomáš Cibulka
+                            Tomáš Cibulka<br>
                             Oblá 36<br>
-                            625 00 BRNO
+                            634 00 BRNO
                         </div>
                         <div>                            
                             E-mail: <a href="mailto:t.cibulka87@gmail.com">t.cibulka87@gmail.com</a><br>
@@ -43,6 +50,13 @@
 </template>
 
 <script setup lang="ts">
+import CityMap from './components/CityMap.vue'
 import PhotoGallery from './components/PhotoGallery.vue'
 </script>
 
+
+<style>
+.section {
+    padding: 6rem 0;
+}
+</style>
