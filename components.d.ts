@@ -13,7 +13,17 @@ declare module 'vue' {
     BNavbarNav: typeof import('bootstrap-vue-next')['BNavbarNav']
     BNavbarToggle: typeof import('bootstrap-vue-next')['BNavbarToggle']
     BNavItem: typeof import('bootstrap-vue-next')['BNavItem']
+    BTableSimple: typeof import('bootstrap-vue-next')['BTableSimple']
+    BTbody: typeof import('bootstrap-vue-next')['BTbody']
+    BTd: typeof import('bootstrap-vue-next')['BTd']
+    BTfoot: typeof import('bootstrap-vue-next')['BTfoot']
+    BTh: typeof import('bootstrap-vue-next')['BTh']
+    BThead: typeof import('bootstrap-vue-next')['BThead']
+    BTr: typeof import('bootstrap-vue-next')['BTr']
     CityMap: typeof import('./src/components/CityMap.vue')['default']
+    FlatInfo: typeof import('./src/components/FlatInfo.vue')['default']
+    InfoTable: typeof import('./src/components/InfoTable.vue')['default']
     PhotoGallery: typeof import('./src/components/PhotoGallery.vue')['default']
+    Table: typeof import('./src/components/Table.vue')['default']
   }
 }

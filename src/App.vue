@@ -12,10 +12,13 @@
     </header>
     
     <div class="container">
-        <!-- <h1 class="text-center my-5">2+kk, 48 m², Oblá, Brno - Nový Lískovec</h1> -->
-        <section class="section">
-            <h3 class="text-center mb-4">Fotogalerie</h3>
+        <h1 class="text-center mt-5">2+kk, 48 m², Oblá, Brno - Nový Lískovec</h1>
+        <section class="section">            
             <PhotoGallery />
+        </section>
+
+        <section>
+            <FlatInfo />
         </section>
 
         <section class="section">
@@ -24,6 +27,7 @@
             <iframe class="rounded-2" style="border:none" src="https://frame.mapy.cz/s/pobedefefa" width="100%" height="466" frameborder="0"></iframe>
         </section>
     </div>
+
     <footer class="footer text-center text-lg-start text-white mt-5">
         <section class="container pt-4">
             <div class="text-center text-sm-start mb-3">
@@ -51,13 +55,13 @@
 </template>
 
 <script setup lang="ts">
-import CityMap from './components/CityMap.vue'
+import type FlatInfo from './components/FlatInfo.vue';
 import PhotoGallery from './components/PhotoGallery.vue'
 </script>
 
 
 <style>
 .section {
-    padding: 6rem 0;
+    padding: 3rem 0;
 }
 </style>

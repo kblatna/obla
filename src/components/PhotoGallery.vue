@@ -1,6 +1,6 @@
 <template>        
-  <div class="d-flex">
-    <div class="col-12 col-md-6" v-lightgallery>
+  <div class="d-flex flex-wrap">
+    <div class="photogallery col-12 col-lg-6" v-lightgallery>
       <swiper
         :modules="[Thumbs]"
         @swiper="setThumbsSwiper"
@@ -13,15 +13,15 @@
         </swiper-slide>
       </swiper>
     </div>
-    <div class="col-12 col-md-6 p-3">
-      dfasdeflasfe
+    <div class="information col-12 col-lg-6 ps-3">
+      <InfoTable />
     </div>
   </div>
 
   <div class="my-2" v-lightgallery>
     <swiper
       :modules="modules"
-      :slides-per-view="6"
+      :slides-per-view="5"
       :space-between="10"
       :loop="true"
       :navigation="true"
@@ -85,23 +85,9 @@ const photos = ref([
 
 .swiper {
   width: 100%;
-  height: 300px;
-  margin-left: auto;
-  margin-right: auto;
+  height: 100%;
   --swiper-navigation-color: #fff;
   --swiper-theme-color: #fff;
-}
-
-.swiper-slide {
-  background-size: cover;
-  background-position: center;
-  text-align: center;
-  font-size: 16px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: auto;
 }
 
 .swiper-slide img {
@@ -109,17 +95,25 @@ const photos = ref([
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 15px;
 }
 
-.main-photo img {
-  height: 18.8rem;
-  width: 18.8rem;
-}
+.swiper-thumbs img {
+  height: 31rem;
+  }
 
 .thumbs img {
-  height: 9.4rem;
-  width: 9.4rem;
+  height: 150px;
+}
+
+@media (max-width: 992px) {
+  .photogallery {
+    order: 2;
+  }
+
+  .information {
+    order: 1;
+  }
 }
 
 </style>
- 
