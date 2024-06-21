@@ -1,11 +1,13 @@
 <template>
-    <header>
-        <BNavbar toggleable="lg" type="dark" variant="dark" container>
+    <header class="bg-blue">
+        <BNavbar toggleable="lg" container>
             <BNavbarBrand href="/">Oblá 36</BNavbarBrand>
             <BNavbarToggle target="nav-collapse" class="bg-white" />
             <BCollapse id="nav-collapse" is-nav>
                 <BNavbarNav class="ms-auto mb-2 mb-lg-0">
-                    <BNavItem href="/" class="text-white-50">Info</BNavItem>
+                    <BNavItem href="#photogallery" class="text-white-50">Fotogalerie</BNavItem>
+                    <BNavItem href="#information" class="text-white-50">Informace</BNavItem>
+                    <BNavItem href="#location" class="text-white-50">Lokalita</BNavItem>
                 </BNavbarNav>
             </BCollapse>
         </BNavbar>
@@ -13,22 +15,22 @@
     
     <div class="container">
         <h1 class="text-center mt-5">2+kk, 48 m², Oblá, Brno - Nový Lískovec</h1>
-        <section class="section">            
+        <section class="section" id="photogallery">            
             <PhotoGallery />
         </section>
 
-        <section>
+        <section id="information">
             <FlatInfo />
         </section>
 
-        <section class="section">
+        <section class="section" id="location">
             <h3 class="text-center mb-4">Lokalita</h3>
             <!-- <CityMap /> -->                
             <iframe class="rounded-2" style="border:none" src="https://frame.mapy.cz/s/pobedefefa" width="100%" height="466" frameborder="0"></iframe>
         </section>
     </div>
 
-    <footer class="footer text-center text-lg-start text-white mt-5">
+    <footer class="footer bg-blue text-center text-lg-start text-white mt-5">
         <section class="container pt-4">
             <div class="text-center text-sm-start mb-3">
                 <div class="d-flex justify-content-center">
