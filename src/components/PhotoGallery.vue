@@ -13,7 +13,7 @@
         </swiper-slide>
       </swiper>
     </div>
-    <div class="information col-12 col-lg-6 ps-3">
+    <div class="information col-12 col-lg-6">
       <InfoTable />
     </div>
   </div>
@@ -66,54 +66,19 @@ const modules = [Navigation, Pagination, Scrollbar, Thumbs]
 // Define the photos array
 const photos = ref([
   { src: '0018', alt: 'Obývací pokoj' },
-  { src: '0019', alt: 'Kuchyně' },
-  { src: '0020', alt: 'Ložnice' },
-  { src: '0032', alt: 'Koupelna' },
-  { src: '0033', alt: 'Chodba' },
-  { src: '0036', alt: 'blabla' },
-  { src: '0042', alt: 'Obývací pokoj' },
-  { src: '0047', alt: 'Kuchyně' },
-  { src: '0054', alt: 'Ložnice' },
+  { src: '0036', alt: 'Obývací pokoj' },
+  { src: '0047', alt: 'Obývací pokoj' },
+  { src: '0083', alt: 'Kuchyňská linka' },
+  { src: '0116', alt: 'Kuchyňský kout' },
+  { src: '0079', alt: 'Kuchyňská linka' },
+  { src: '0100', alt: 'Chodba' },
+  { src: '0103', alt: 'Vstupní dveře' },
+  { src: '0139', alt: 'Ložnice' },
+  { src: '0144', alt: 'Ložnice' },
+  { src: '0153', alt: 'Ložnice' },
+  { src: '0067', alt: 'Koupelna' },
   { src: '0059', alt: 'Koupelna' },
-  { src: '0067', alt: 'Chodba' },
-  { src: '0079', alt: 'blabla' }
+  { src: '0054', alt: 'Toaleta' }
 ])
 
 </script>
-
-<style lang="scss">
-
-.swiper {
-  width: 100%;
-  height: 100%;
-  --swiper-navigation-color: #fff;
-  --swiper-theme-color: #fff;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 15px;
-}
-
-.swiper-thumbs img {
-  height: 31rem;
-  }
-
-.thumbs img {
-  height: 150px;
-}
-
-@media (max-width: 992px) {
-  .photogallery {
-    order: 2;
-  }
-
-  .information {
-    order: 1;
-  }
-}
-
-</style>

@@ -1,7 +1,10 @@
 <template>
-    <header class="bg-blue">
+    <header class="header">
         <BNavbar toggleable="lg" container>
-            <BNavbarBrand href="/">Oblá 36</BNavbarBrand>
+            <BNavbarBrand href="tel:+420725695145">
+                <IconifyIcon icon="mdi:phone" class="me-2" />
+                725 695 145
+            </BNavbarBrand>
             <BNavbarToggle target="nav-collapse" class="bg-white" />
             <BCollapse id="nav-collapse" is-nav>
                 <BNavbarNav class="ms-auto mb-2 mb-lg-0">
@@ -14,7 +17,8 @@
     </header>
     
     <div class="container">
-        <h1 class="text-center mt-5">2+kk, 48 m², Oblá, Brno - Nový Lískovec</h1>
+        <h1 class="text-center mt-5 mb-0">Prodej pěkného 2+kk bytu po&nbsp;rekonstrukci</h1>
+        <p class="text-center text-gray-400 fs-3 mb-0">48 m², Oblá, Brno - Nový Lískovec</p>
         <section class="section" id="photogallery">            
             <PhotoGallery />
         </section>
@@ -30,10 +34,10 @@
         </section>
     </div>
 
-    <footer class="footer bg-blue text-center text-lg-start text-white mt-5">
+    <footer class="footer text-center text-lg-start text-white mt-5">
         <section class="container pt-4">
             <div class="text-center text-sm-start mb-3">
-                <div class="d-flex justify-content-center">
+                <div class="d-flex gap-5 justify-content-center justify-content-md-start">
                     <div>
                         <h6 class="footer-col-title text-uppercase fw-bold">Kontakt na majitele:</h6>                    
                         <div class="mt-5">
@@ -45,7 +49,15 @@
                             E-mail: <a href="mailto:t.cibulka87@gmail.com">t.cibulka87@gmail.com</a><br>
                             Telefon: <a href="tel:+420725695145">725 695 145</a>
                         </div>
-                    </div>                    
+                    </div>        
+                    <div>
+                        <h6 class="footer-col-title text-uppercase fw-bold">Dokumenty:</h6>
+                        <div class="mt-5">                            
+                            <a href="">Energetický štítek domu</a><br>
+                            <a href="">Evidenční list vlastníkas</a><br>
+                            <a href="">Předpis plateb záloh</a><br>
+                        </div>
+                    </div>               
                 </div>
             </div>
         </section>
