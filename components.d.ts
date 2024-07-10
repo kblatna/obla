@@ -23,6 +23,7 @@ declare module 'vue' {
     BTr: typeof import('bootstrap-vue-next')['BTr']
     CityMap: typeof import('./src/components/CityMap.vue')['default']
     FlatInfo: typeof import('./src/components/FlatInfo.vue')['default']
+    FooterInfo: typeof import('./src/components/FooterInfo.vue')['default']
     InfoTable: typeof import('./src/components/InfoTable.vue')['default']
     PhotoGallery: typeof import('./src/components/PhotoGallery.vue')['default']
     Table: typeof import('./src/components/Table.vue')['default']
