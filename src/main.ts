@@ -5,8 +5,18 @@ import { Icon } from '@iconify/vue'
 
 import { createApp } from 'vue'
 import App from './App.vue'
+import VueGtag from "vue-gtag"
 
 const app = createApp(App)
+
+app.use(VueGtag, {
+    config: {
+        id: "G-WEVXG15DMN",
+        params: {
+            anonymize_ip: true             
+        }
+    },
+})
 
 app.component('IconifyIcon', Icon)
 
