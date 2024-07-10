@@ -21,7 +21,7 @@
   <div class="my-2" v-lightgallery>
     <swiper
       :modules="modules"
-      :slides-per-view="5"
+      :slides-per-view="slidesPerView"
       :space-between="10"
       :loop="true"
       :navigation="true"
@@ -38,7 +38,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { computed, ref, onMounted, onUnmounted } from 'vue'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import { Navigation, Pagination, Scrollbar, Thumbs } from 'swiper/modules'
 import vLightgallery from './vLightgallery'
@@ -56,6 +56,7 @@ import 'lightgallery/css/lg-thumbnail.css'
 import 'lightgallery/css/lg-zoom.css'
 
 const thumbsSwiper = ref(null)
+const windowWidth = ref(window.innerWidth)
 
 const setThumbsSwiper = (swiper: any) => {
   thumbsSwiper.value = swiper
@@ -80,5 +81,30 @@ const photos = ref([
   { src: '0059', alt: 'Koupelna' },
   { src: '0054', alt: 'Toaleta' }
 ])
+
+const slidesPerView = computed(() => {
+  switch (true) {
+    case (windowWidth.value <= 576):
+      return 2
+    case (windowWidth.value <= 992):
+      return 3
+    case (windowWidth.value <= 1200):
+      return 4
+    default:
+      return 5
+  }
+})
+
+const handleResize = () => {
+  windowWidth.value = window.innerWidth
+}
+
+onMounted(() => {
+  window.addEventListener('resize', handleResize)
+})
+
+onUnmounted(() => {
+  window.removeEventListener('resize', handleResize)
+})
 
 </script>
