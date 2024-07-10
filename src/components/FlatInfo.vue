@@ -30,7 +30,7 @@
                 zahrát mimo jiné tenis či badminton.
             </p>
 
-            <div class="d-flex justify-content-center mt-4">
+            <div class="d-flex justify-content-center my-4">
                 <BButton
                     variant="primary" 
                     href="tel:+420725695145" 

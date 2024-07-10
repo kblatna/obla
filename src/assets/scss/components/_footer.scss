@@ -3,26 +3,4 @@
     background: #0f0c29;
     background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
     background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
-
-    &-col-title {    
-        position: relative;
-    }
-
-    &-bottom {
-        background-color: rgba(0, 0, 0, 0.2);   
-    }
-}
-
-@include media-breakpoint-up(sm) {
-    .footer-col-title::after {
-        content: '';
-        width: 60px;
-        height: 1px;
-        background: white;
-        opacity: 0.5;
-        position: absolute;
-        top: 35px;
-        left: 0;
-        margin-bottom: 20px;
-    }
 }
