@@ -79,7 +79,12 @@ const photos = ref([
   { src: '0153', alt: 'Ložnice' },
   { src: '0067', alt: 'Koupelna' },
   { src: '0059', alt: 'Koupelna' },
-  { src: '0054', alt: 'Toaleta' }
+  { src: '0054', alt: 'Toaleta' },
+  { src: '0160', alt: 'Vchod do domu' },
+  { src: '0162', alt: 'Pohled na dům z parkoviště' },
+  { src: '0163', alt: 'Radnice kousek od domu' },
+  { src: '0168', alt: 'Park Pod Plachtami' },
+  { src: '0169', alt: 'Komunitní centrum Skála' }
 ])
 
 const slidesPerView = computed(() => {
