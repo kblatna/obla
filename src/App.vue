@@ -2,8 +2,7 @@
     <header class="header">
         <BNavbar toggleable="lg" container>
             <BNavbarBrand href="tel:+420725695145">
-                <IconifyIcon icon="mdi:phone" class="me-2" />
-                725 695 145
+                <IconifyIcon icon="mdi:phone" class="me-2" />725 695 145
             </BNavbarBrand>
             <BNavbarToggle target="nav-collapse" class="bg-white" />
             <BCollapse id="nav-collapse" is-nav>

@@ -50,6 +50,7 @@ $yellow:  #ffc933;
 $green:   #008237;
 $teal:    #20c997 !default;
 $cyan:    #0dcaf0 !default;
+$secondary: #1b998b;
 // scss-docs-end color-variables
 
 // scss-docs-start colors-map
@@ -1422,8 +1423,8 @@ $navbar-toggler-focus-width:        $btn-focus-width !default;
 $navbar-toggler-transition:         box-shadow .15s ease-in-out !default;
 
 $navbar-light-color:                $white;
-$navbar-light-hover-color:          $gray-500;
-$navbar-light-active-color:         $gray-500;
+$navbar-light-hover-color:          $secondary;
+$navbar-light-active-color:         $secondary;
 $navbar-light-disabled-color:       rgba(var(--#{$prefix}emphasis-color-rgb), .3) !default;
 $navbar-light-icon-color:           rgba($body-color, .75) !default;
 $navbar-light-toggler-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-light-icon-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;

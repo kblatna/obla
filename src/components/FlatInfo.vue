@@ -33,8 +33,8 @@
             <div class="d-flex justify-content-center my-4">
                 <BButton
                     variant="primary" 
-                    href="tel:+420725695145" 
-                    target="_blank"
+                    href="tel:+420725695145"
+                    class="btn-lg"
                 >
                     <IconifyIcon icon="mdi:phone" class="me-2" />
                     725 695 145
@@ -69,25 +69,19 @@
                     <div class="mt-3"><b>Celkem 3 500 Kč</b> při obsazení bytu 2 osobami. </div>
                 </div>
 
-                <div class="p-4 rounded-3 bg-light mt-4">
+                <div class="flat-surroundings p-4 rounded-3 bg-light mt-4">
                     <h3>Vyžití v&nbsp;okolí:</h3>
                     <div class="mb-3">
                         <IconifyIcon icon="mdi:forest-outline" class="fs-3 text-secondary me-2" />  
-                        <a class="link-primary" href="https://www.kudyznudy.cz/aktivity/koniklecova-louka-v-prirodni-rezervaci-kamenny-vrc" target="_blank">
-                            Unikátní koniklecová louka
-                        </a>     
+                        <a class="link-primary" href="https://www.kudyznudy.cz/aktivity/koniklecova-louka-v-prirodni-rezervaci-kamenny-vrc" target="_blank">Unikátní koniklecová louka</a>     
                     </div>             
                     <div class="mb-3">
                         <IconifyIcon icon="mdi:flower" class="fs-3 text-secondary me-2" />  
-                        <a class="link-primary" href="https://www.novy-liskovec.cz/park-pod-plachtami/ds-1140" target="_blank">
-                            Park Pod Plachtami
-                        </a>     
+                        <a class="link-primary" href="https://www.novy-liskovec.cz/park-pod-plachtami/ds-1140" target="_blank">Park Pod Plachtami</a>     
                     </div>
                     <div class="mb-3">
                         <IconifyIcon icon="mdi:fitness-center" class="fs-3 text-secondary me-2" />  
-                        <a class="link-primary" href="https://www.fit4all.cz/cs" target="_blank">
-                            Fitness centrum Fit4All
-                        </a>    
+                        <a class="link-primary" href="https://www.fit4all.cz/cs" target="_blank">Fitness centrum Fit4All</a>    
                     </div>
                     <div class="d-flex align-items-center mb-3">
                         <IconifyIcon icon="mdi:house-city-outline" class="fs-3 text-secondary me-1" />  
@@ -97,15 +91,11 @@
                     </div>
                     <div class="mb-3">
                         <IconifyIcon icon="mdi:swimming-pool" class="fs-3 text-secondary me-2" />  
-                        <a class="link-primary" href="https://aquapark.starez.cz/" target="_blank">
-                            Aquapark Kohoutovice
-                        </a>                        
+                        <a class="link-primary" href="https://aquapark.starez.cz/" target="_blank">Aquapark Kohoutovice</a>                        
                     </div>
                     <div>
                         <IconifyIcon icon="material-symbols:museum-outline" class="fs-3 text-secondary me-2" />  
-                        <a class="link-primary" href="https://www.mzm.cz/pavilon-anthropos/" target="_blank">
-                            Pavilon Anthropos
-                        </a>
+                        <a class="link-primary" href="https://www.mzm.cz/pavilon-anthropos/" target="_blank">Pavilon Anthropos</a>
                     </div>
                 </div>
             </div>            

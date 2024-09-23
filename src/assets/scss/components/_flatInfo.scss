@@ -1,5 +1,10 @@
-a {
-    &:hover {
-        text-decoration: underline !important;
+.flat-surroundings {
+    a {
+        transition: all 0.3s;
+
+        &:hover {
+            font-weight: 500;
+            transition: all 0.3s;
+        }
     }
 }
