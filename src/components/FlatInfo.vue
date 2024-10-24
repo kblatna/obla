@@ -42,29 +42,26 @@
             </div>
         </div>
 
-        <div class="col-12 col-lg-4">
-            <div class="row">
-                <div class="p-4 rounded-3 bg-light">
-                    <h3>Náklady na bydlení:</h3>
-                    <IconWithText v-for="cost in costs" :key="cost.id"
-                        :icon="cost.icon" 
-                        :text="cost.text"
-                        class="d-flex align-items-center lh-sm mt-3"
-                    />
-                    <div class="mt-3"><b>Celkem 3 500 Kč</b> při obsazení bytu 2 osobami. </div>
-                </div>
+        <div class="col-12 col-lg-4">            
+            <div class="p-4 rounded-3 bg-light">
+                <h3>Náklady na bydlení:</h3>
+                
+                <IconWithText v-for="cost in costs" :key="cost.id"
+                    :icon="cost.icon" 
+                    :text="cost.text"
+                />
+                <div class="mt-3"><b>Celkem 3 500 Kč</b> při obsazení bytu 2 osobami. </div>
+            </div>
 
-                <div class="flat-surroundings p-4 rounded-3 bg-light mt-4">
-                    <h3>Vyžití v&nbsp;okolí:</h3>
-                              
-                    <IconWithText v-for="activity in activities" :key="activity.id"
-                        :icon="activity.icon" 
-                        :link="activity.link" 
-                        :text="activity.text"
-                        class="mt-3"
-                    />
-                </div>
-            </div>            
+            <div class="flat-surroundings p-4 rounded-3 bg-light mt-4">
+                <h3>Vyžití v&nbsp;okolí:</h3>
+                            
+                <IconWithText v-for="activity in activities" :key="activity.id"
+                    :icon="activity.icon" 
+                    :link="activity.link" 
+                    :text="activity.text"
+                />
+            </div>                       
         </div>
     </div>
 </template>

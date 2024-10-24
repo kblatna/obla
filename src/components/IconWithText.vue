@@ -1,8 +1,8 @@
 <template>
-    <div>
+    <div class="d-flex align-items-center lh-sm mt-3">
         <IconifyIcon 
             :icon="icon" 
-            class="fs-3 text-secondary me-2" 
+            class="flex-shrink-0 fs-3 text-secondary me-2" 
         />  
         <a 
             class="link-primary" 
