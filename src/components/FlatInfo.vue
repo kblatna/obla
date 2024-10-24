@@ -45,7 +45,7 @@
         <div class="col-12 col-lg-4">            
             <div class="p-4 rounded-3 bg-light">
                 <h3>Náklady na bydlení:</h3>
-                
+
                 <IconWithText v-for="cost in costs" :key="cost.id"
                     :icon="cost.icon" 
                     :text="cost.text"
@@ -67,7 +67,7 @@
 </template>
 
 <script setup lang="ts">
-import type IconWithText from './IconWithText.vue';
+import IconWithText from './IconWithText.vue'
 
 const costs = [
     { id: 1, icon: 'mdi:radiator', text: 'Vytápění: 500 Kč' },
