@@ -12,10 +12,10 @@
             <p>
                 V rámci kuchyně je k dispozici elektrická trouba se sklokeramickou varnou deskou a digestoří. Součástí kuchyňské linky 
                 je rovněž myčka nádobí. Budoucímu majiteli můžeme přenechat také lednici s mrazákem a mikrovlnou troubu. Prostor mezi 
-                kuchyňským koutem a obývacím pokojem odděluje nábytková stěna 
-                <a class="link-secondary fw-bold" href="https://www.ikea.com/cz/cs/p/kallax-policovy-dil-vz-bile-mor-dub-10324513/" target="_blank">Kallax</a>, která 
-                také může zůstat v bytě. Na chodbě se nachází prostorná šatní skříň <a class="link-secondary fw-bold" href="https://www.ikea.com/cz/cs/cat/system-pax-19086/" 
-                target="_blank">IKEA PAX</a>, v ložnici pak 140 cm široká postel. 
+                kuchyňským koutem a obývacím pokojem hezky oddělovala nábytková stěna 
+                <a class="link-secondary fw-bold" href="https://www.ikea.com/cz/cs/p/kallax-policovy-dil-vz-bile-mor-dub-10324513/" target="_blank">Kallax</a>. 
+                Na chodbě se nachází prostorná šatní skříň <a class="link-secondary fw-bold" href="https://www.ikea.com/cz/cs/cat/system-pax-19086/" 
+                target="_blank">IKEA PAX</a>, v ložnici pak 140 cm široká postel. Obojí může zůstat v bytě. 
             </p>
 
             <h3>Občanská vybavenost:</h3>

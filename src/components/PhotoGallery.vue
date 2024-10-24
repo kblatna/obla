@@ -13,7 +13,7 @@
         </swiper-slide>
       </swiper>
     </div>
-    <div class="information col-12 col-lg-6">
+    <div class="information col-12 col-lg-6 ps-0 ps-lg-4">
       <InfoTable />
     </div>
   </div>
