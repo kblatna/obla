@@ -43,10 +43,3 @@ import FlatInfo from './components/FlatInfo.vue'
 import PhotoGallery from './components/PhotoGallery.vue'
 import FooterInfo from './components/FooterInfo.vue'
 </script>
-
-
-<style>
-.section {
-    padding: 3rem 0;
-}
-</style>

@@ -33,17 +33,3 @@ onUnmounted(() => {
   map.value?.remove()
 })
 </script>
-
-<style scoped>
-.map-wrap {
-  position: relative;
-  width: 100%;
-  height: 300px;
-}
-
-.map {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-</style>
