@@ -17,15 +17,13 @@ declare module 'vue' {
     BTableSimple: typeof import('bootstrap-vue-next')['BTableSimple']
     BTbody: typeof import('bootstrap-vue-next')['BTbody']
     BTd: typeof import('bootstrap-vue-next')['BTd']
-    BTfoot: typeof import('bootstrap-vue-next')['BTfoot']
     BTh: typeof import('bootstrap-vue-next')['BTh']
-    BThead: typeof import('bootstrap-vue-next')['BThead']
     BTr: typeof import('bootstrap-vue-next')['BTr']
     CityMap: typeof import('./src/components/CityMap.vue')['default']
     FlatInfo: typeof import('./src/components/FlatInfo.vue')['default']
     FooterInfo: typeof import('./src/components/FooterInfo.vue')['default']
+    IconWithText: typeof import('./src/components/IconWithText.vue')['default']
     InfoTable: typeof import('./src/components/InfoTable.vue')['default']
     PhotoGallery: typeof import('./src/components/PhotoGallery.vue')['default']
-    Table: typeof import('./src/components/Table.vue')['default']
   }
 }

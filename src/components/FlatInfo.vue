@@ -46,59 +46,47 @@
             <div class="row">
                 <div class="p-4 rounded-3 bg-light">
                     <h3>Náklady na bydlení:</h3>
-                    <div class="mb-3">
-                        <IconifyIcon icon="mdi:radiator" class="fs-3 text-secondary me-2" />  
-                        Vytápění: 500 Kč     
-                    </div>  
-                    <div class="d-flex align-items-center mb-3">
-                        <IconifyIcon icon="mdi:shower" class="fs-3 text-secondary" />  
-                        <div class="lh-sm ms-3">Voda (ohřev, vodné, stočné): 500 Kč</div>   
-                    </div> 
-                    <div class="mb-3">
-                        <IconifyIcon icon="mdi:lightbulb-on-outline" class="fs-3 text-secondary me-2" />  
-                        Elektřina: 950 Kč     
-                    </div> 
-                    <div class="d-flex align-items-center mb-3">
-                        <IconifyIcon icon="mdi:house-city-outline" class="fs-2 text-secondary" />  
-                        <div class="lh-sm ms-3">Poplatek za správu budovy včetně fondu oprav: 1000 Kč </div>   
-                    </div>
-                    <div class="d-flex align-items-center">
-                        <IconifyIcon icon="mdi:hand-coin-outline" class="fs-2 text-secondary" />  
-                        <div class="lh-sm ms-3">Ostatní náklady (např. úklid, pojištění domu apod.): 500 Kč</div>    
-                    </div>
+                    <IconWithText v-for="cost in costs" :key="cost.id"
+                        :icon="cost.icon" 
+                        :text="cost.text"
+                        class="d-flex align-items-center lh-sm mt-3"
+                    />
                     <div class="mt-3"><b>Celkem 3 500 Kč</b> při obsazení bytu 2 osobami. </div>
                 </div>
 
                 <div class="flat-surroundings p-4 rounded-3 bg-light mt-4">
                     <h3>Vyžití v&nbsp;okolí:</h3>
-                    <div class="mb-3">
-                        <IconifyIcon icon="mdi:forest-outline" class="fs-3 text-secondary me-2" />  
-                        <a class="link-primary" href="https://www.kudyznudy.cz/aktivity/koniklecova-louka-v-prirodni-rezervaci-kamenny-vrc" target="_blank">Unikátní koniklecová louka</a>     
-                    </div>             
-                    <div class="mb-3">
-                        <IconifyIcon icon="mdi:flower" class="fs-3 text-secondary me-2" />  
-                        <a class="link-primary" href="https://www.novy-liskovec.cz/park-pod-plachtami/ds-1140" target="_blank">Park Pod Plachtami</a>     
-                    </div>
-                    <div class="mb-3">
-                        <IconifyIcon icon="mdi:fitness-center" class="fs-3 text-secondary me-2" />  
-                        <a class="link-primary" href="https://www.fit4all.cz/cs" target="_blank">Fitness centrum Fit4All</a>    
-                    </div>
-                    <div class="d-flex align-items-center mb-3">
-                        <IconifyIcon icon="mdi:house-city-outline" class="fs-3 text-secondary me-1" />  
-                        <a class="link-primary" href="https://novy-liskovec.cz/komunitni-centrum-skala/ds-1389" target="_blank">
-                            <div class="lh-sm ms-2">Komunitní a společenské centrum Skála</div>
-                        </a>
-                    </div>
-                    <div class="mb-3">
-                        <IconifyIcon icon="mdi:swimming-pool" class="fs-3 text-secondary me-2" />  
-                        <a class="link-primary" href="https://aquapark.starez.cz/" target="_blank">Aquapark Kohoutovice</a>                        
-                    </div>
-                    <div>
-                        <IconifyIcon icon="material-symbols:museum-outline" class="fs-3 text-secondary me-2" />  
-                        <a class="link-primary" href="https://www.mzm.cz/pavilon-anthropos/" target="_blank">Pavilon Anthropos</a>
-                    </div>
+                              
+                    <IconWithText v-for="activity in activities" :key="activity.id"
+                        :icon="activity.icon" 
+                        :link="activity.link" 
+                        :text="activity.text"
+                        class="mt-3"
+                    />
                 </div>
             </div>            
         </div>
     </div>
 </template>
+
+<script setup lang="ts">
+import type IconWithText from './IconWithText.vue';
+
+const costs = [
+    { id: 1, icon: 'mdi:radiator', text: 'Vytápění: 500 Kč' },
+    { id: 2, icon: 'mdi:shower', text: 'Voda (ohřev, vodné, stočné): 500 Kč' },
+    { id: 3, icon: 'mdi:lightbulb-on-outline', text: 'Elektřina: 950 Kč' },
+    { id: 4, icon: 'mdi:house-city-outline', text: 'Poplatek za správu budovy včetně fondu oprav: 1000 Kč' },
+    { id: 5, icon: 'mdi:hand-coin-outline', text: 'Ostatní náklady (např. úklid, pojištění domu apod.): 500 Kč' }
+]
+
+const activities = [
+    { id: 1, icon: 'mdi:forest-outline', link: 'https://www.kudyznudy.cz/aktivity/koniklecova-louka-v-prirodni-rezervaci-kamenny-vrc', text: 'Unikátní koniklecová louka' },
+    { id: 2, icon: 'mdi:flower', link: 'https://www.novy-liskovec.cz/park-pod-plachtami/ds-1140', text: 'Park Pod Plachtami' },
+    { id: 3, icon: 'mdi:fitness-center', link: 'https://www.fit4all.cz/cs', text: 'Fitness centrum Fit4All' },
+    { id: 4, icon: 'mdi:house-city-outline', link: 'https://novy-liskovec.cz/komunitni-centrum-skala/ds-1389', text: 'Komunitní a společenské centrum Skála' },
+    { id: 5, icon: 'mdi:swimming-pool', link: 'https://aquapark.starez.cz/', text: 'Aquapark Kohoutovice' },
+    { id: 6, icon: 'material-symbols:museum-outline', link: 'https://www.mzm.cz/pavilon-anthropos/', text: 'Pavilon Anthropos' }
+] 
+
+</script>
