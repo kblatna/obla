@@ -7,8 +7,8 @@
                     <span>Tomáš Cibulka</span>
                     <span>Oblá 36</span>
                     <span>634 00 BRNO</span>
-                    <a href="mailto:t.cibulka87@gmail.com">t.cibulka87@gmail.com</a>
-                    <a href="tel:+420725695145">725 695 145</a>
+                    <!-- <a href="mailto:t.cibulka87@gmail.com">t.cibulka87@gmail.com</a> -->
+                    <!-- <a href="tel:+420725695145">725 695 145</a> -->
                 </address>
             </div>        
             <div class="col-12 col-md-4 my-4">

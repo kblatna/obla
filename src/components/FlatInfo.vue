@@ -30,7 +30,7 @@
                 zahrát mimo jiné tenis či badminton.
             </p>
 
-            <div class="d-flex justify-content-center my-4">
+            <!-- <div class="d-flex justify-content-center my-4">
                 <BButton
                     variant="primary" 
                     href="tel:+420725695145"
@@ -38,8 +38,8 @@
                 >
                     <IconifyIcon icon="mdi:phone" class="me-2" />
                     725 695 145
-                </BButton>
-            </div>
+                </BButton>                
+            </div> -->
         </div>
 
         <div class="col-12 col-lg-4">            
